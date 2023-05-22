@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+       margin: 0;
+       padding: 0;
+       font-family: 'Ubuntu', sans-serif;
+    }
+    header{
+       background-color: rgb(3, 0, 0);
+       box-shadow: 100px;
+
+    }
+    .container{
+        display: inline-block;
+        margin-left: 450px;
+    }
+    nav ul li{
+        display: inline-block;
+        font-size: 13px;
+        margin-right:  3cm;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(253, 252, 252);
+    }
+    .navbar:hover{
+        color: rgb(121, 112, 112);
+        position: relative;
+        bottom: 3px;
+       
+    }
+    img{
+        filter: invert(100);
+        width: 26px;
+        transition: transform 0.3s;
+    }
+    img:hover{
+        transform: perspective(300px) translate3d(0px,0px,50px);
+    }
+   
+   
+    .logo{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    left: 12px;
+    width: 27px;
+    height: 27px;
+
+                                 
+    }
+    .box{
+        display: inline-block;
+       border: 3px solid rgb(92, 88, 88);;
+        width: 500px;
+        box-sizing: border-box;
+        border-radius: 15px 30px 30px 0px ;
+    }
+    .container2{
+        
+        border:8px solid rgb(92, 88, 88);
+        margin: 2cm;
+        border-radius: 25px;
+        background-image: linear-gradient(to right, rgb(252, 225, 202), rgb(199, 163, 163));
+        box-shadow: 5px 5px 30px 1px;
+    }
+    span{
+        font-style: italic;
+    }
+    h1{
+        font-size: 90px;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+   #box2{
+    width: 750px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+    border: transparent;
+   
+   }
+   .tagline{
+    text-align: center;
+    margin: 0;
+        padding: 0;
+        margin: 30px;
+        padding-bottom: 12px;
+        font-size: 25px;
+        
+   }
+   h3{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+   font-size: 20px;
+   }
+   h2{
+    display: inline;
+    border: 4px solid rgb(72, 69, 69);
+    padding: 5px;
+   position: relative;
+   top:15px;
+   margin-left:690px;
+   border-radius: 20px;
+   box-shadow: 2px 2px 5px 1px;
+  }
+  .projects{
+    
+    height: 60px;
+   
+  }
+  .procontainer{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 640px;
+    border-radius: 10px;
+ 
+  }
+  .innerbox{
+    
+    display: inline-block;
+    margin: 10px;
+    width: 465px;
+    height: 300px;
+    border-radius: 20px;
+    transition: transform 0.5s, box-shadow 0.5s, opacity 0.5s ;
+   
+   
+  }
+  
+#boxA{
+    background: url('img/img1.jpg');
+    background-size: cover;
+}
+#boxB{
+    background: url('img/img2.jpg');
+    background-size: cover;
+}
+
+#boxC{
+    background: url('img/img3.jpg');
+    background-size: cover;
+}
+
+#boxD{
+    background: url('img/img4.jpg');
+    background-size: cover;
+}
+
+#boxE{
+    background: url('img/img5.jpg');
+    background-size: cover;
+}
+
+#boxF{
+    background: url('img/img6.png');
+    background-size: cover;
+}
+.pyara{
+    text-align: center;
+    margin-top: 130px;
+    color: rgb(250, 248, 248);
+    font-size: 30px;
+ 
+}
+
+.innerbox:hover{
+   transform: perspective(300px) translate3d(0px ,0px, 30px);
+    box-shadow: 5px 5px 15px 1px;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+.ourclientsbtn{
+    text-align: center;
+    margin-top: 50px;
+    border: 4px solid black;
+    padding: 8px;
+    display: inline-block;
+    margin-left: 670px;
+    border-radius: 25px;
+   box-shadow: 2px 2px 5px 1px;
+
+}
+.ourclientsbtn h3{
+    font-size: 25px;
+}
+.client1{
+    display: inline-block;
+    width: 230px;
+    box-shadow: 5px 5px 30px 1px;
+    height: 6cm;
+    border-radius:25px ;
+    
+    
+
+}
+.containerforclients{
+    margin: 0.5cm 1cm;
+   
+
+   
+} 
+#client1review{
+    border:  2px solid rgb(96, 92, 92);
+    width: 800px;
+    height: auto;
+    position: relative;
+    bottom: 80px;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, white, rgb(207, 200, 200));
+    
+   
+    
+}
+    #containerforclients2{
+        margin-left:3.5cm ;
+        
+    }
+    #containerforclients3{
+        margin-left: 6.5cm;
+    }   
+
+#client2review2{
+    border:  2px solid rgb(96, 92, 92);
+    width: 800px;
+    height: auto;
+    position: relative;
+    bottom: 80px;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    background-image: linear-gradient(to right, white, rgb(207, 200, 200));
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+ #client3review3{
+    border:  2px solid rgb(96, 92, 92);
+    width: 800px;
+    height: auto;
+    position: relative;
+    bottom: 80px;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    background-image: linear-gradient(to right, white, rgb(207, 200, 200));
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 10px;
+ }
+.containerforclients{
+    
+}
+#client1review h4{
+    margin: 0;
+    padding: 0;
+}
+#client1photo{
+    background: url('img/jack-finnigan-veB8-OSCyM4-unsplash.jpg');
+    background-size: cover;
+}
+#client2photo{
+    background: url('img/tamara-bellis-2Tv7-O13hgk-unsplash.jpg');
+    background-size: cover;
+}
+#client3photo{
+    background: url('img/kareya-saleh-tLKOj6cNwe0-unsplash.jpg');
+    background-size: cover;
+}
+
+.contactbtn{
+    border:4px solid black;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-left:690px ;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px 1px;
+}
+.contactbtn h4{
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  padding: 8px;
+  
+}
+.contactcontainer{
+    
+    height: 550px;
+    margin: 0;
+    
+}
+#contactbox{
+    
+   width: 680px;
+    height: 500px;
+    margin-left: 28%;
+    border-radius: 40px;
+background-image: linear-gradient(to right, rgb(82, 79, 79),rgb(8, 8, 8));
+}
+.nameemail{
+    
+    display: inline-block;
+    margin-left:2cm ;
+    margin-top: 1cm;
+    
+}
+.phonenopassword{
+    
+   display: inline-block;
+   margin-left:2cm ;
+    margin-top: 15px;
+
+}
+#name{
+    width: 450px;
+    padding: 10px;  
+    border:2px solid black;
+    border-radius: 25px;
+}
+#email{
+    width: 450px;
+    padding: 10px;
+    margin-top: 15px;
+   text-decoration: black;
+   border-radius: 25px;
+}
+::placeholder{
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+    font-size: 15px;
+}
+#number{
+    width: 450px;
+    padding: 10px;
+    margin-top: 0px;
+   text-decoration: rgb(7, 7, 7);
+   border-radius: 25px;
+}
+#password{
+    width: 450px;
+    padding: 10px;
+    margin-top: 15px;
+   text-decoration: black;
+   border-radius: 25px;
+}
+.textarea{
+margin-top: 25px;
+margin-left: 5px;
+}
+#submit{
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size:15px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.footer{
+    height: 300px;
+    border: 2px solid black;
+    background-color: black;
+   
+}
+.footerbox{
+    border: 2px solid black;
+    margin: 0.5cm;  
+    width: 6cm;
+    display: inline-block;
+   
+}
+.footerbox h1{
+    font-size: 25px;
+    margin-left: 0;
+    color: white;
+    
+}
+.footerbox h5{
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+#footerbox2{
+    margin-left: 100px;
+}
+#footerbox3{
+    margin-left:100px;
+}
+#footerbox4{
+   position: relative;
+   top: 38px;
+   width: 300px;
+   margin-left: 100px;
+}
+#img1{
+    width: 50px;
+}
+#img2{
+    width:35px;
+    margin-left: 10px;
+}
+#img3{
+    width: 48px;
+    margin-left: 10px;
+}
+
+</style>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+           <a href="#"> <img src="img/menu.png" alt=""></a>
+        </div> 
+        <div class="container">
+        <nav>
+            <ul>
+                <li><a class="navbar" href="#">HOME </a></li>
+                <li><a class="navbar" href="#">PORTFOLIO</a></li>
+                <li><a class="navbar" href="#">ABOUT</a></li>
+                <li><a class="navbar" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- about -->
+    <section class="boxsec">
+        <div class="container2">
+            <div class="box">
+                <h1><span>Peter</span> <br> Parker</h1>
+                <p class="tagline">Frontend Developer</p> 
+
+            </div>
+            
+            <div class="box" id="box2">
+            <h3>ABOUT</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi iste quas neque quibusdam accusantium reiciendis ea culpa architecto tenetur quae et quasi dolor, esse beatae similique pariatur rem sunt, quam iusto excepturi ipsa atque, totam ex. Maiores suscipit iste sequi, sed vitae modi! Cum accusantium aut consequatur magni voluptatum doloribus eum ducimus natus, necessitatibus, earum quas illo recusandae maxime velit. Modi blanditiis suscipit, dolorum et, esse, eligendi iure deserunt aspernatur recusandae natus necessitatibus quia. Et dignissimos sequi, quo voluptatum quasi ipsa amet suscipit corrupti magnam odit nihil! Eum dignissimos fugiat accusamus. Rerum veritatis perspiciatis non, facilis, dolorum ullam ducimus quod labore nobis reiciendis maxime ad corrupti, impedit aspernatur? Ea qui, enim necessitatibus debitis voluptatem ab recusandae laborum numquam autem, tempora quo beatae doloribus distinctio cumque, saepe fugit tenetur nostrum minima asperiores eaque reprehenderit labore ullam! Dolore maiores nulla exercitationem ducimus labore soluta qui minus magnam corporis tempore repellendus d .... </p>
+            </div>
+        </div>
+    </section>
+<!-- projects -->
+    <section class="section2">
+        <div class="projects">
+            <h2>PROJECTS</h2>
+        </div>
+        <div class="procontainer">
+            <div class="innerbox" id="boxA">
+            <p class="pyara">PORFOLIO SITE</p>
+            </div>
+            <div class="innerbox" id="boxB">
+               <p class="pyara">LIBRARY SITE</p>
+            </div>
+            <div class="innerbox" id="boxC">
+                <p class="pyara">SOCIAL SITE</p>
+             </div>
+            <div class="innerbox" id="boxD">
+                <p class="pyara">MEDICAL SITE</p>
+            </div>
+            <div class="innerbox" id="boxE">
+                <p class="pyara">DELIVERY SITE</p>
+            </div>
+            <div class="innerbox" id="boxF">
+                <p class="pyara">LEARNING SITE</p>
+            </div>
+        </div>
+        </section>
+        <section>
+<!-- clients -->
+        <div class="ourclientsbtn">
+        <h3>OUR CLIENTS</h3>
+        </div>
+    <!-- container for our clients -->
+        <div class="containerforclients">
+            <div class="client1" id="client1photo">
+             
+            </div>
+            <div class="client1" id="client1review">
+                <h3><center>Review</center></h3>
+                <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, itaque facere quibusdam facilis doloribus eligendi deserunt illo asperiores alias voluptates temporibus. Modi, aspernatur? Repellendus saepe animi tempore exercitationem quaerat recusandae assumenda, nobis sit soluta similique earum culpa veritatis sapiente ea quidem perferendis! Ea inventore tenetur odit aspernatur voluptate nostrum. Recusandae, dolore fuga? Nulla voluptas mollitia qui illum animi pariatur quis!</p></span>
+              
+            </div>
+        </div>
+        <div class="containerforclients" id="containerforclients2">
+            <div class="client1" id="client2photo">
+             
+            </div>
+            <div class="client1" id="client2review2">
+                <h3><center>Review</center></h3>
+                <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, itaque facere quibusdam facilis doloribus eligendi deserunt illo asperiores alias voluptates temporibus. Modi, aspernatur? Repellendus saepe animi tempore exercitationem quaerat recusandae assumenda, nobis sit soluta similique earum culpa veritatis sapiente ea quidem perferendis! Ea inventore tenetur odit aspernatur voluptate nostrum. Recusandae, dolore fuga? Nulla voluptas mollitia qui illum animi pariatur quis!</p></span>
+            </div>
+        </div>
+        <div class="containerforclients" id="containerforclients3">
+            <div class="client1" id="client3photo">
+             
+            </div>
+            <div class="client1" id="client3review3">
+                <h3><center>Review</center></h3>
+                <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, itaque facere quibusdam facilis doloribus eligendi deserunt illo asperiores alias voluptates temporibus. Modi, aspernatur? Repellendus saepe animi tempore exercitationem quaerat recusandae assumenda, nobis sit soluta similique earum culpa veritatis sapiente ea quidem perferendis! Ea inventore tenetur odit aspernatur voluptate nostrum. Recusandae, dolore fuga? Nulla voluptas mollitia qui illum animi pariatur quis!</p></span>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section>
+        <!-- contact heading -->
+        <div class="contactbtn">
+            <h4>CONTACT</h4> 
+        </div> <hr>
+        <div class="contactcontainer">
+            <div id="contactbox">
+                <div class="nameemail">
+                    <form action="method.php">
+                        <input type="text" placeholder="Enter your full name:" id="name" required> <br>
+                        <input type="email" placeholder="Enter your E-mail:" id="email" required>
+                    </form>
+                </div>
+                <div class="phonenopassword">
+                    <form action="method.php">
+                        <input type="number" placeholder="Enter your phone n.:" id="number" required> <br>
+                        <input type="password" placeholder="Enter your password:" id="password" required>
+                        <br>
+                        <textarea name="Address" id="textarea" cols="70" rows="8" class="textarea" placeholder="Your Address" required></textarea> <br>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+            </div><hr>
+        </div>
+    </section> 
+</main>
+    <footer>
+        <div class="footer">
+            <div class="footerbox" id="footerbox1">
+            <h1>Content</h1>
+            <h5>New Resourses</h5>
+            <h5>Featured Projects</h5>
+            </div>
+            <div class="footerbox" id="footerbox2">
+                <h1>Contributor</h1>
+                <h5>Login</h5>
+                <h5>Sign Up</h5>
+            </div>
+            <div class="footerbox" id="footerbox3">
+               <h1>Contact</h1>
+               <h5>About</h5>
+               <h5>DMCA</h5>
+            </div>
+            <div class="footerbox" id="footerbox4">
+                <h1>Social</h1>
+                <h5>Get in touch</h5>
+                <a href="https://twitter.com/i/flow/login?lang=en"><img src="img/kisspng-computer-icons-portable-network-graphics-vector-gr-twitter-zen-living-in-balance-5b650e38dbe1d6.6270807315333494329007.png" alt="" id="img1"></a>
+                <a href="https://www.facebook.com/"> <img src="img/kisspng-facebook-inc-logo-computer-icons-like-button-facebook-icon-5aba7ea7a78165.0123240515221715596861.png" alt="" id="img2"></a>
+                <a href="https://www.instagram.com/"> <img src="img/kisspng-social-media-computer-icons-clip-art-portable-netw-dial-robyn-art-instagram-5b6fe05904db34.5516639115340585850199.png" alt="" id="img3"></a></a>
+             </div>
+        </div>
+    </footer>
+</body>
+</html>
+
